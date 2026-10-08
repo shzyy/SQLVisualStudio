@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5e95100bcb844dd6a903bf7caa3dfac1" Name="Diagram1" >
+        <EntityTypeShape EntityType="cho.Huviringid" Width="1.5" PointX="0.625" PointY="0.75" />
+        <EntityTypeShape EntityType="cho.juhendaja" Width="1.5" PointX="4.375" PointY="0.875" />
+        <EntityTypeShape EntityType="cho.HuviringJyhendaja" Width="1.5" PointX="2.5" PointY="0.75" />
+        <AssociationConnector Association="cho.juhendajaHuviringJyhendaja" />
+        <EntityTypeShape EntityType="cho.Toimusaeg" Width="1.5" PointX="1.875" PointY="3.75" />
+        <EntityTypeShape EntityType="cho.Ruum" Width="1.5" PointX="4.375" PointY="5.75" />
+        <EntityTypeShape EntityType="cho.Uritus" Width="1.5" PointX="6.125" PointY="5.625" />
+        <EntityTypeShape EntityType="cho.UritusHuviring" Width="1.5" PointX="9.5" PointY="6.125" />
+        <EntityTypeShape EntityType="cho.Registreerimine" Width="1.5" PointX="7" PointY="3.125" />
+        <EntityTypeShape EntityType="cho.Osaleja" Width="1.5" PointX="6.75" PointY="1" />
+        <EntityTypeShape EntityType="cho.Osalemine" Width="1.5" PointX="10.125" PointY="1" />
+        <EntityTypeShape EntityType="cho.Arve" Width="1.5" PointX="10.625" PointY="3.25" />
+        <EntityTypeShape EntityType="cho.Ruhm" Width="1.5" PointX="4" PointY="3.125" />
+        <AssociationConnector Association="cho.HuviringidToimusaeg" />
+        <AssociationConnector Association="cho.RuhmToimusaeg" />
+        <AssociationConnector Association="cho.RuumToimusaeg" />
+        <AssociationConnector Association="cho.HuviringidRuhm" />
+        <AssociationConnector Association="cho.UritusUritusHuviring" />
+        <AssociationConnector Association="cho.HuviringidUritusHuviring" />
+        <AssociationConnector Association="cho.OsalejaRegistreerimine" />
+        <AssociationConnector Association="cho.RuhmRegistreerimine" />
+        <AssociationConnector Association="cho.HuviringidRegistreerimine" />
+        <AssociationConnector Association="cho.RegistreerimineArve" />
+        <AssociationConnector Association="cho.HuviringidArve" ManuallyRouted="true" >
+          <ConnectorPoint PointX="1.7812519999999998" PointY="0.75" />
+          <ConnectorPoint PointX="1.7812519999999998" PointY="0.4895832622423768" />
+          <ConnectorPoint PointX="9.875" PointY="0.4895832622423768" />
+          <ConnectorPoint PointX="9.875" PointY="3.7138196145833331" />
+          <ConnectorPoint PointX="10.260416666666666" PointY="3.7138196145833327" />
+          <ConnectorPoint PointX="10.427083333333334" PointY="3.7138196145833331" />
+          <ConnectorPoint PointX="10.625" PointY="3.7138196145833331" />
+        </AssociationConnector>
+        <AssociationConnector Association="cho.RegistreerimineOsalemine" />
+        <AssociationConnector Association="cho.HuviringidHuviringJyhendaja" />
+        <AssociationConnector Association="cho.UritusUritusHuviring1" />
+        <AssociationConnector Association="cho.HuviringidUritusHuviring1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
